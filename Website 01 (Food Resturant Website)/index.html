@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Owais Taste Hub</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Importing the CSS file of Swipper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  </head>
+  <body>
+
+    <!-- ---------------------------------------------------------------------- -->
+    
+    <!-- -----------------------------1st Section----------------------------- -->
+
+    <!-- -----------------------------Header Starts----------------------------- -->
+
+    <header>
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i>Owais Taste Hub</a>
+
+      <nav class="navbar">
+        <a class="active" href="#home" onclick="closeNavbar()">Home</a>
+        <a href="#dishes" onclick="closeNavbar()">Dishes</a>
+        <a href="#About" onclick="closeNavbar()">About</a>
+        <a href="#menu" onclick="closeNavbar()">Menu</a>
+        <a href="#review" onclick="closeNavbar()">Review</a>
+        <a href="#order" onclick="closeNavbar()">Order</a>
+      </nav>
+      
+      <div class="icons">
+        <i class="fas fa-bars" id="menu-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+      </div>
+    </header>
+    <!-- ------------------------------Header Ends------------------------------ -->
+
+    <!-- X----------------------------------------------------------------------X -->
+    <!-- Search Form Start -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="Place Your Order" name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+      </form>
+    <!-- Search Form End -->
+    
+    <!-- ---------------------------------------------------------------------- -->
+    
+    <!-- -----------------------------2nd Section----------------------------- -->
+
+    <!-- -----------------------------Home Starts----------------------------- -->
+
+<section class="home" id="home">
+  
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Dish</span>
+            <h3>Hot Pizza</h3>
+            <p>Savor the heat of our delicious pizza, with gooey cheese, zesty tomatoes, and a crispy crust. Each bite is a burst of flavor, expertly crafted to leave you wanting more. Treat yourself to a slice of culinary heaven that's sure to satisfy your cravings.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="Assets/pizza-bg.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Dish</span>
+            <h3>Sandwitches</h3>
+            <p>Enjoy our scrumptious sandwiches filled with fresh ingredients and bursting with flavor. Perfect for any time of day, they're a delicious treat you won't be able to resist. Bite into satisfaction with every bite!.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="Assets/clubSandwitch.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Dish</span>
+            <h3>Fried Chicken</h3>
+            <p>
+              Savor the crispy goodness of our fried chicken, perfectly seasoned and cooked to golden perfection. Each bite is a crunchy delight, packed with flavor that will leave you craving more. Indulge in the ultimate comfort food experience with our mouthwatering fried chicken..</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="Assets/fried_chicken.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Dish</span>
+            <h3>Spicy Zinger</h3>
+            <p>Delight in the fiery flavor of our Spicy Zinger chicken sandwich, a tantalizing blend of heat and crunch. With its crispy fried chicken fillet, zesty spices, and creamy mayo, it's a taste sensation you won't soon forget. Get ready to ignite your taste buds with the perfect balance of spice and savory goodness in every bite of our Spicy Zinger.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="Assets/spicy-zinger.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span>Our Special Dish</span>
+            <h3>Chicken Tikka</h3>
+            <p>
+
+              Savor the aromatic delight of our Chicken Tikka, grilled to perfection with traditional spices. Each bite is bursting with flavor, offering a delicious blend of tender chicken and authentic seasonings. Experience a taste of India with our irresistible Chicken Tikka.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img src="Assets/bg-Tikka.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+      
+</section>
+
+
+    <!-- -------------------------------------------- Home Section Ends -------------------------------------------- -->
+
+    <!-- X---------------------------------------------------------------------------------------------------------X -->
+
+    <!-- ----------------------------------------------------------------------------------------------------------- -->
+    
+    <!-- ------------------------------------------------ 3rd Section ------------------------------------------------ -->
+
+    <!-- ------------------------------------------- Dishes Section Starts ------------------------------------------- -->
+
+
+<section class="dishes" id="dishes">
+
+  <h3 class="sub-heading"> Our Dishes</h3>
+  <h1 class="heading"> Popular Dishes </h1>
+  
+  <div class="box-container">
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/mini-pizza.png" alt="">
+      <h3>Hot Pizza</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/tikka.png" alt="">
+      <h3>Chicken Tikka</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/mini-nuggets.png" alt="">
+      <h3>Nuggets</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/zinger.png" alt="">
+      <h3>Crispy Zinger</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/fish.png" alt="">
+      <h3>Fried Fish</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="Assets/club-sandwitches.png" alt="">
+      <h3>Club Sandwitch</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>$11.99</span>
+      <a href="#" class="btn">Add to Cart</a>
+    </div>
+    
+  </div>
+  
+</section>
+
+    <!-- -------------------------------------------- Dishes Section Ends -------------------------------------------- -->
+
+    <!-- X---------------------------------------------------------------------------------------------------------X -->
+
+
+<!-- About Section Starts -->
+
+<section class="About" id="About">
+  
+    <h3 class="sub-heading"> About Us </h3>
+    <h1 class="heading"> Why You Should Choose <span style="text-transform: uppercase;">Owais' Hotel</span>? </h1>
+  
+  <div class="row">
+
+    <div class="image">
+      <img src="Assets/deliciously-grilled-chicken-meal-with-aromatic-spices-generative-ai-creation_561855-14353.avif" alt="">
+    </div>
+
+    <div class="content">
+      <h3>Best Food In The Country</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores eos non magni earum, voluptates ducimus? Quod culpa quae autem repudiandae tempora laudantium itaque veritatis omnis quaerat odit, eveniet quia dignissimos mollitia deserunt repellendus, in nemo ullam at exercitationem libero doloremque fugiat impedit? Dicta, rerum cum.</p>
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-shipping-fast ">
+            <span>Free Delivery</span>
+          </i> 
+        </div>
+        <div class="icons">
+          <i class="fas fa-dollar">
+            <span>Easy Payment</span>
+          </i> 
+        </div>
+        <div class="icons">
+          <i class="fas fa-headset">
+            <span>24/7 Service</span>
+          </i> 
+        </div>
+      </div>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- About Section Ends -->
+
+
+<!-- Menu Section Starts -->
+
+<section class="menu" id="menu">
+
+  
+  <h3 class="sub-heading"> Our Menu</h3>
+  <h1 class="heading"> Today's Special Food </h1>
+  
+  <div class="box-container">
+
+    <div class="box">
+      <div class="image">
+        <img src="https://i0.wp.com/nomadsecrets.com/wp-content/uploads/2018/07/pizza.jpeg?fit=1280%2C853&ssl=1" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/four-small-chicken-club-sandwich-portions-bamboo-skewers_140725-1655.jpg?w=826&t=st=1703136780~exp=1703137380~hmac=d506bd686095766c32bce98dc48aa2a53b84daa4462f63bc407c144718f111c0" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://noseychef.com/wp-content/uploads/2019/12/IMG_5237.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://t4.ftcdn.net/jpg/01/72/79/35/360_F_172793547_85JMqGBFFnIJYhR8SHocrak0iie0pVFn.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://png.pngtree.com/background/20230610/original/pngtree-four-milk-shakes-with-chocolate-ice-cream-in-the-bottles-picture-image_3054877.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/front-view-different-drinks-colorful-inside-bottles_140725-14407.jpg?w=826&t=st=1703136485~exp=1703137085~hmac=c55b980efa30aa627e09739dd0047e33e3640e2293af36a64cebc3983c1d0387" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://i.ytimg.com/vi/OYGNn1n651o/maxresdefault.jpg" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/side-view-cookies-with-sweets-cookies-with-chocolate-strawberry-bowls-hizelnuts-strawberry-chocolate-table_140725-110599.jpg?w=900&t=st=1703136606~exp=1703137206~hmac=574753b2b65f5c0a33675848c2b8dc12b4bb3b0725065ca082045b80c0fa5606" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/caucasian-lule-kebab-meat-barbecue-with-green-salad-bread-slices_114579-3563.jpg?w=826&t=st=1703136717~exp=1703137317~hmac=c90b83ef3c19ad994f3a25d295530bf09b9f865510c2ac479969b185aec58289" alt="">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>Delicious Food</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, necessitatibus!</p>
+        <a href="#" class="btn">Add to Cart</a>
+        <span class="price">$10.99</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Menu Section Ends -->
+
+
+<!-- <==================== Review Section Starts ====================> -->
+
+<section class="review" id="review">
+  <h3 class="sub-heading"> Customer's Review</h3>
+  <h1 class="heading"> What they have to say </h1>
+
+  <div class="swiper review-slider">
+    <div class="swiper-wrapper wrapper">
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/033/129/417/small/a-business-man-stands-against-white-background-with-his-arms-crossed-ai-generative-photo.jpg" alt="">
+          <div class="user-info">
+            <h3>Abdur Rasheed</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>While we enjoyed the flavors of the dishes at your restaurant, we wanted to share our feedback on the service. There were some delays in getting our orders, and the staff seemed a bit overwhelmed. We believe addressing these issues could significantly enhance the overall dining experience. We appreciate your commitment to improvement and hope to see positive changes on our next visit.</p>
+      </div>
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://duanefurlongstudios.com/wp-content/themes/yootheme/cache/f9/Allen_Nicholas_712-0450-Web-Loose-HST-retouched-scaled-1-scaled-f9c9f561.webp" alt="">
+          <div class="user-info">
+            <h3>Anas Azam</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>Our recent visit to your restaurant was an absolute delight! The ambiance was warm and inviting, the service impeccable, and the food exceeded our expectations. Each dish was a culinary masterpiece, bursting with flavor and creativity. We appreciate the attention to detail and the friendly staff who made our evening truly memorable. We'll definitely be recommending your restaurant to friends and family.</p>
+      </div>
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://qph.cf2.quoracdn.net/main-qimg-ed7f35a777931015bdfea2390c70f800-lq" alt="">
+          <div class="user-info">
+            <h3>Aleem Akhtar</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>During our visit, there was a small hiccup with one of our orders. However, we were pleasantly surprised by how efficiently your staff resolved the issue. The quick response and genuine concern for customer satisfaction did not go unnoticed. This level of professionalism and commitment to customer service sets your restaurant apart.</p>
+      </div>
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://images.squarespace-cdn.com/content/v1/5521b031e4b06ebe90178744/1616788648926-Z017Q23XG9JI2UBDXKD6/navy-suit-grey-business-headshots.jpg" alt="">
+          <div class="user-info">
+            <h3>Naeem Baig</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <p>Our family had a wonderful time at your restaurant. The kid-friendly menu, coupled with the welcoming atmosphere, made it an ideal choice for a family outing. The staff was attentive to our children's needs, and the play area was a definite plus. We appreciate the effort in creating a family-friendly environment and will certainly be returning.</p>
+      </div>
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://images.squarespace-cdn.com/content/v1/5c3253854611a0e9c02e5151/1671549669684-67YW0G2TDLMUY685QXL4/2K7A9740.jpg" alt="">
+          <div class="user-info">
+            <h3>M Sheraz</h3>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class=""fa-regular fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <p>Our experience at your restaurant was a mix of highs and lows. The appetizers were outstanding, showcasing the chef's skill and creativity. However, the main course fell short of expectations. Some dishes lacked the same finesse we experienced earlier. Consistency in quality across all courses would greatly elevate the dining experience.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- X=================== Review Section Ends ===================X -->
+
+
+<!-- <=================== Order Section Starts ===================> -->
+
+<section id="order" class="order">
+  
+  <h3 class="sub-heading"> Order Now </h3>
+  <h1 class="heading"> Free & Fast </h1>
+
+  <form action="">
+
+    <div class="inputBox">
+      <div class="input">
+        <span>Your Order</span>
+        <input type="text" placeholder="Enter Food Name">
+      </div>
+      <div class="input">
+        <span>Additional Food</span>
+        <input type="text" placeholder="Extra With Food">
+      </div>
+    </div>
+    
+    <div class="inputBox">
+      <div class="input">
+        <span>How much</span>
+        <input type="number" placeholder="How Many orders">
+      </div>
+      <div class="input">
+        <span>Date & Time</span>
+        <input type="datetime-local" placeholder="Enter Your Number">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>Your Address</span>
+        <textarea name="" id="" placeholder="Enter Your Full Address" cols="30" rows="10"></textarea>
+      </div>
+      <div class="input">
+        <span>Your Message</span>
+        <textarea name="" id="" placeholder="Enter Your Message" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <button class="btn">
+      Order Now
+    </button>
+
+  </form>
+
+</section>
+
+<!-- X=================== Order Section Ends ===================X -->
+
+<!-- <===Footer Section Starts===> -->
+
+<section id="footer" class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>Locations</h3>
+      <a href="#">Pakistan</a>
+      <a href="#">Karachi</a>
+      <a href="#">Islamabad</a>
+      <a href="#">Lahore</a>
+      <a href="#">Multan</a>
+    </div>
+
+    <div class="box">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#review">Review</a>
+      <a href="#order">Order</a>
+    </div>
+    
+    <div class="box">
+      <h3>Contact Info</h3>
+      <a href="#">+92-3349998807</a>
+      <a href="#">+92-3345459867</a>
+      <a href="#">+92-3449539849</a>
+      <a href="#">+92-3349510549</a>
+      <a href="#">Karachi, Pakistan</a>
+    </div>
+    
+    <div class="box">
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+      <a href="#">Linkedin</a>
+      <a href="#">WhatsApp Channel</a>
+    </div>
+  </div>
+
+  <div class="credit">
+    Copyright &copy; <span id="year"></span> created by <span>Owais Nadeem - Front End Web Developer</span>
+  </div>
+</section>
+
+<!-- <===Footer Section Ends===> -->
+
+    <!-- script js file -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
