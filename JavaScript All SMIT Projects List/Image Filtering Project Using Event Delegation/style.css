@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Krona+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  background-color: #ecf0f1;
+  height: auto;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.tabs li {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.tabs li:hover {
+  color: aqua;
+  transition: 0.5s all;
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+
+.menu_images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 4rem;
+}
+
+.menu_images .image {
+  width: 45%;
+}
+
+.menu_images .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  box-shadow: 4px 2px 13px 1px rgb(83, 81, 81);
+}
+
+@media screen and (max-width: 700px) {
+  .menu_images .image {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabs {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+}

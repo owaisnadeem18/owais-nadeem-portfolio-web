@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List | Kanban Board</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="Kanban_Board.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="Assets/planning_5792530.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-4" href="#">Kanban Board </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" aria-current="page" href="#"
+                >Developed by <span class="name">Owais Nadeem </span>
+                <span class="profession">
+                  &lt;Front End Web Developer/&gt;
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Kanban Board Container -->
+
+    <div class="container Kanban-container">
+      <div class="row">
+        <!-- 1st Container of three -->
+        <div class="col-12 col-lg-4 box-parent">
+          <div class="toDo width bg box">
+            <div
+              class="heading-content d-flex align-items-center justify-content-center gap-2"
+            >
+              <h2 class="text-center py-2">ToDo Tasks</h2>
+              <span class="material-symbols-outlined"> receipt_long </span>
+            </div>
+            <div class="border-line"></div>
+
+            <div class="tasks">
+              <div class="input-field">
+                <input
+                  type="text"
+                  placeholder="Add Your Tasks"
+                  id="input_task"
+                />
+                <button class="btn btn-primary" onclick="getInput_Data()">
+                  <span class="material-symbols-outlined"> add_task </span>
+                </button>
+              </div>
+
+              <!-- -----------------------------------------  -->
+              <!-- This is the container of tasks which we are getting from the JS as
+              inner html , so we have to use drag for it -->
+
+              <div
+                class="handling-scrollbar"
+                draggable="true"
+                id="entered_tasks"
+              ></div>
+
+              <!-- -----------------------------------------  -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd Container of three -->
+        <div class="col-12 col-lg-4 box-parent">
+          <div class="doing width bg box">
+            <div
+              class="heading-content d-flex align-items-center justify-content-center gap-2"
+            >
+              <h2 class="text-center py-2">Doing</h2>
+              <span class="material-symbols-outlined"> clock_loader_60 </span>
+            </div>
+            <div class="border-line"></div>
+
+            <div class="handling-scrollbar tasks" id="doing_tasks"></div>
+          </div>
+        </div>
+
+        <!-- 3rd Container of three -->
+        <div class="col-12 col-lg-4 box-parent tasks">
+          <div class="done width bg box">
+            <div
+              class="heading-content d-flex align-items-center justify-content-center gap-2"
+            >
+              <h2 class="text-center py-2">Done</h2>
+              <span class="material-symbols-outlined"> checklist_rtl </span>
+            </div>
+            <div class="border-line"></div>
+            <div class="handling-scrollbar" id="done_tasks"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Linking Script Tag of Kanban Board -->
+
+    <script src="Kanban_Board.js"></script>
+
+    <!-- Linking bootstrap js -->
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Add Sortable.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  </body>
+</html>

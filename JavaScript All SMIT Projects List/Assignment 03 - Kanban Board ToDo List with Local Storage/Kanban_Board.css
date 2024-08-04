@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(171, 171, 188);
+}
+
+.name {
+  color: yellow;
+}
+
+.profession {
+  color: rgb(60, 240, 60);
+}
+
+.Kanban-container {
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 1rem;
+  background-image: url("https://i.pinimg.com/474x/ce/01/cb/ce01cbea09e8b6af7d67a439baad667f.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 400px; */
+  width: 100%;
+}
+
+.width {
+  width: 90%;
+  margin: auto;
+}
+
+/* Styling of Box in Kasban Board */
+
+.box {
+  color: white;
+  /* background-color: rgb(82, 76, 203); */
+  border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.16) 14px 10px 20px;
+  border-radius: 10px;
+  background-color: rgb(61, 60, 60);
+
+  min-height: 69vh;
+}
+
+.border-line {
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* CSS of Input Field (div) */
+
+.input-field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.tasks {
+  /* min-height: 630vh; */
+  border-radius: 20px;
+}
+
+/* Custom scrollbar styling */
+.handling-scrollbar::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  color: black;
+}
+
+.tasks-entered-container::-webkit-scrollbar-track {
+  background: #333; /* Background of the track */
+}
+
+.handling-scrollbar::-webkit-scrollbar-thumb {
+  background: #666; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounding the corners of the thumb */
+}
+
+.handling-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Color of the thumb when hovered */
+}
+
+.input-field input {
+  width: 90%;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  outline: none;
+}
+
+/* .Kasban-container .heading-content .icon-img {
+  width: 20px;
+} */
+
+/* CSS of inner js class */
+
+.handling-scrollbar {
+  height: 50vh;
+  overflow-y: auto;
+}
+
+.tasks ul {
+  list-style: none;
+  background-color: rgb(122, 111, 202);
+  padding: 1rem;
+  border-radius: 50px;
+  margin: 1rem 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasks ul li {
+  font-size: 1.3rem;
+}
+
+.task-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.task-icons span {
+  cursor: pointer;
+}
+
+.task-icons button {
+  background-color: rgb(122, 111, 202);
+}
+
+.handling-scrollbar ul {
+  cursor: grab;
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    margin: 2rem auto;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .box {
+    width: 100%;
+    min-height: 50px;
+  }
+}

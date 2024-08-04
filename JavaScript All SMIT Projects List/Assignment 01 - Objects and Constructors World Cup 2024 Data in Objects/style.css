@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+.container .parent-container {
+  background-color: #44257d;
+  color: #ffffff;
+  padding: 0.5rem 0 0 0;
+  margin: 2rem 0 0 0;
+}
+
+.container {
+  padding: 0;
+}
+
+.width {
+  width: 25%;
+}
+
+.hover:hover {
+  background-color: #645485;
+  color: black;
+
+  cursor: pointer;
+}
+
+.padding {
+  padding: 1rem 0 0.6rem 0;
+}
+
+.matches {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.matches::after {
+  content: "";
+  border-bottom: 4px solid rgb(155, 149, 149);
+  width: 100%;
+  bottom: 0%;
+  position: absolute;
+  text-align: center;
+}
+
+.anchors {
+  background-color: #44257d;
+}
+
+.anchors a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ------------------------------------ Cards Section CSS ---------------------------------------- */
+
+.card {
+  background-color: #1f1f1f;
+  color: gray;
+  border-radius: 0;
+  border-top: 0;
+  border-color: #646565;
+  padding: 2rem 0;
+}
+
+.card:hover {
+  background-color: #242527;
+}
+
+/* Cards Section CSS */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* ----------------------------------- Creating The UI rows --------------------------------------- */
+
+.first-row-f-size {
+  font-size: 15px;
+}
+
+.card-rows-padding {
+  padding: 0rem 1rem;
+}
+
+.match-result-f-color {
+  color: #ffffff;
+}
+
+.winner-match {
+  color: #ffffff;
+}
+
+.last-row-video-img-size {
+  width: 120px;
+}
+
+.last-row-left-parent {
+  position: relative;
+}
+
+.time-stamp {
+  position: absolute;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 0.2rem;
+  bottom: 0;
+  right: 0;
+  font-size: 10px;
+}
+
+.flag img {
+  width: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .container .parent-container {
+    margin: 0 0 0 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    align-items: flex-start; /* Align cards at the top */
+  }
+}

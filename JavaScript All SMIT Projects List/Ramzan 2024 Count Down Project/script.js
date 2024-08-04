@@ -13,7 +13,7 @@ tareekh.addEventListener("click", () => {
   }, 1000);
 });
 
-let desired_Date = new Date("10 March 2024 00:00:00").getTime();
+let desired_Date = new Date("28 February 2025 00:00:00").getTime();
 
 var x = setInterval(() => {
   var now = new Date().getTime();

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(32, 38, 127); */
+  background-color: rgb(207, 231, 252);
+}
+
+.name {
+  color: yellow;
+}
+
+.profession {
+  color: rgb(60, 240, 60);
+}
+
+.sign-up {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  padding: 3rem 4rem;
+  background-color: rgb(68, 67, 67);
+  color: rgb(255, 255, 255);
+  width: 45%;
+  margin: 4rem auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .sign-up {
+    width: 90%;
+  }
+}
