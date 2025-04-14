@@ -9,10 +9,10 @@ MenuBtn.addEventListener("click", function (e) {
 
 let typed = new Typed(".auto-input", {
   strings: [
-    "A Front End Developer!",
-    "Mastering HTML, CSS And JS",
-    "JavaScript Enthusiast",
-    "Learning And Practicing React JS",
+"MERN Stack Developer",  
+"Next.js Enthusiast",  
+"Always Exploring JavaScript",
+"React.js Expert"
   ],
   typeSpeed: 100,
   backSpeed: 100,
