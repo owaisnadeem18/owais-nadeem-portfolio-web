@@ -1,5 +1,11 @@
 let MenuBtn = document.getElementById("MenuBtn");
 
+let year = document.getElementById("year")
+
+let date = new Date().getFullYear()
+
+year.innerText = date
+
 MenuBtn.addEventListener("click", function (e) {
   document.querySelector("body").classList.toggle("mobile-nav-active");
   this.classList.toggle("fa-xmark");

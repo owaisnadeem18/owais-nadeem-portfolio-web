@@ -49,15 +49,15 @@ header .profile {
 }
 
 header .profile img {
-  width: 15.5rem;
-  height: 16rem;
+  width: 10rem;
   border-radius: 50%;
+  height: 10rem;
   border: 5px solid var(--bgColor);
   object-fit: cover;
   object-position: top;
 }
 
-header .profile h1 {
+header .profile h2 {
   color: white;
   font-weight: 800;
 }
@@ -77,6 +77,7 @@ header .profile .social-icons a {
   font-size: 18px;
   margin: 7.5px;
   transition: 0.9s;
+  cursor: pointer;
 }
 
 header nav ul li {
@@ -545,6 +546,7 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 4px;
+  gap: 3px; 
 }
 
 #skill .skill-row .skill-box .skill-info h2 {
@@ -683,12 +685,18 @@ main {
   font-size: 15px;
   font-weight: 500;
   color: var(--textColor);
+  padding: 3px 0 ;
 }
 
 #resume .resume-row .resume-cols .my-edu {
   border-left: 2px solid var(--themeColor);
   position: relative;
   padding: 0px 20px;
+}
+
+#resume .resume-row .resume-cols .my-edu ul li {
+  padding: 4px 0;
+  color: var(--textColor);
 }
 
 #resume .resume-row .resume-cols .my-edu::before {
@@ -728,6 +736,25 @@ main {
   font-size: 15px;
   font-weight: 500;
   padding-bottom: 15px;
+}
+
+#resume .resume-row .resume-cols .my-edu {
+  padding: 0px 20px 10px;
+  border-left: 2px solid var(--themeColor);
+  position: relative;
+}
+
+
+#resume .resume-row .resume-cols .my-edu::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid var(--themeColor);
 }
 
 #resume .resume-row .resume-cols .prof-exp {
