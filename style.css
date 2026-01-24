@@ -882,7 +882,7 @@ started-------------------------> */
   font-size: 10px;
   width: 30px;
   background-color: var(--bgColor);
-  height: 30px;
+  /* height: 30px; */
   border-radius: 50%;
   color: var(--themeColor);
   line-height: 31px;
