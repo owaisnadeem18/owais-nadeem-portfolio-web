@@ -1278,15 +1278,21 @@ started-------------------------> */
     background-image: url(
     https://images.unsplash.com/photo-1623520527569-fee1da87f598?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNvZnR3YXJlJTIwZW5naW5lZXJ8ZW58MHx8MHx8fDA%3D
     );
-    height: auto ;
-    
+    height: auto ;  
+    border: none;
   }
 
   
 #home .home-row h1 {
   letter-spacing: -1px;
-  line-height: 70px;
+  line-height: 55px;
 }
+
+
+#home .home-row p {
+  line-height: 45px;
+}
+
 
   #contact .contact-row {
     margin-top: 50px;
