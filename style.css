@@ -1276,7 +1276,7 @@ started-------------------------> */
 
   #home {
     background-image: url("./Images/home-bg-for-mobile.jpg");
-    height: auto ;  
+    min-height: 100dvh ;  
     border: none;
   }
 
