@@ -1291,6 +1291,10 @@ started-------------------------> */
   line-height: 45px;
 }
 
+   #about .about-col .info-col h2 {
+    font-size: 2rem;
+    letter-spacing: 0.2px;
+  }
 
   #contact .contact-row {
     margin-top: 50px;
