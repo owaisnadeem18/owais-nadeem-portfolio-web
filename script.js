@@ -10,19 +10,19 @@ MenuBtn.addEventListener("click", function (e) {
   document.querySelector("body").classList.toggle("mobile-nav-active");
   this.classList.toggle("fa-xmark");
 });
-
-// Typing Effect In Java Script
+// Typing Effect Initialization for Hero Section
 
 let typed = new Typed(".auto-input", {
   strings: [
-"MERN Stack Developer",  
-"Next.js Enthusiast",  
-"Always Exploring JavaScript",
-"React.js Expert"
+    "Software Engineer",               
+    "Full-Stack Next.js Developer",    
+    "MERN Stack Specialist",           
+    "Scalable Web Architect",          
+    "UI/UX Implementation Expert"      
   ],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backDelay: 2000,
+  typeSpeed: 70,    
+  backSpeed: 40,    
+  backDelay: 1500,  
   loop: true,
 });
 
