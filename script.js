@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 let MenuBtn = document.getElementById("MenuBtn");
 
 let year = document.getElementById("year")
@@ -68,4 +69,51 @@ window.addEventListener("scroll", function () {
       });
     }
   });
+});
+
+
+  emailjs.init("iWoJxGs5rtJ88duOQ");
+
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  const btn = form.querySelector('input[type="submit"]');
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  btn.value = "Sending...";
+
+  emailjs.sendForm(
+    "service_bh1csiu",
+    "template_gtvegp6",
+    this
+  )
+  .then(() => {
+    btn.value = "Send Message";
+
+    Swal.fire({
+      title: "Success!",
+      text: "Your message has been sent successfully ",
+      icon: "success",
+      confirmButtonText: "OK"
+    });
+
+    form.reset();
+  })
+  .catch((error) => {
+    btn.value = "Send Message";
+
+    Swal.fire({
+      title: "Error!",
+      text: "Failed to send message ❌",
+      icon: "error",
+      confirmButtonText: "Try Again"
+    });
+
+    console.error(error);
+  });
+
+});
+
 });
