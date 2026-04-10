@@ -877,9 +877,12 @@ started-------------------------> */
 }
 
 #portfolio .portf-row .portf-item .port-info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
   width: 30px;
   background-color: var(--bgColor);
   /* height: 30px; */
@@ -888,6 +891,7 @@ started-------------------------> */
   line-height: 31px;
   transition: 0.4s;
 }
+
 #portfolio .portf-row .portf-item .port-info a:hover {
   background-color: var(--sideBgColor);
   color: var(--bgColor);
